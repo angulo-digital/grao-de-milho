@@ -66,7 +66,7 @@ gulp.task('watch',function(){
   gulp.watch(gulp.paths.styles, ['styles']);
   gulp.watch(gulp.paths.scripts, ['scripts']);
   gulp.watch(gulp.paths.pages, ['pages']);
-  gulp.watch(gulp.paths.images, ['images']);
+  // gulp.watch(gulp.paths.images, ['images']);
   gulp.watch(gulp.paths.fonts, ['fonts']);
   gulp.watch(gulp.paths.fonts, ['fonts']);
 });
@@ -80,5 +80,5 @@ var installWpTasks = ['wp-install'];
 gulp.task('wp', gulpsync.sync(installWpTasks));
 
 // Build
-var buildTasks = ['clean', 'styles', 'scripts', 'pages', 'images', 'fonts', 'libs'];
+var buildTasks = ['clean', 'styles', 'scripts', 'pages', 'fonts', 'libs'];
 gulp.task('build', gulpsync.sync(buildTasks));

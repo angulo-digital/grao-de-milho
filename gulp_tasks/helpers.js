@@ -136,7 +136,7 @@ function helpers() {
 
 	function checkErrorsWhenIsReading(error) {
 		if (error) {
-			this.log(error, 'danger');
+			helper.log(error, 'danger');
 			process.exit(1)
 		}
 	}
